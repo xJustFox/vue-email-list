@@ -8,8 +8,8 @@
 </head>
 <body>
     <div id="app">
-        <ul style="margin-left: 20px;">
-            <li v-if="arrEmail.length == 10" v-for="(email, index) in arrEmail" :key="index">{{arrEmail[index]}}</li>
+        <ul style="margin-left: 20px;" v-if="arrEmail.length == 10">
+            <li  v-for="(email, index) in arrEmail" :key="index">{{email}}</li>
         </ul>
     </div>
 
